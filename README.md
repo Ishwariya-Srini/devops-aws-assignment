@@ -224,26 +224,40 @@ Instead:
 
 This demonstrates the Infrastructure-as-Code configuration without creating AWS resources.
 
-## 11. HTTPS Deployment
+## 11. AWS Deployment Status
 
-The static application is published using GitHub Pages.
+An AWS account was not available for this assignment, so the infrastructure was not provisioned in a live AWS environment.
+
+Instead, the following Infrastructure-as-Code activities were completed:
+
+* Terraform configuration was created for the required AWS infrastructure.
+* Terraform provider was initialized successfully.
+* Terraform formatting was verified.
+* Terraform validation was successfully completed.
+* No AWS resources were actually created.
+
+This demonstrates the Infrastructure-as-Code design and validation without incurring AWS infrastructure costs.
+
+## 12. HTTPS Deployment
+
+The application is published using GitHub Pages because a live AWS environment was not available.
 
 GitHub Pages provides HTTPS access to the application.
 
-Live URL:
-
+**Live URL:**
 https://ishwariya-srini.github.io/devops-aws-assignment/
 
-## 12. Security Considerations
+## 13. Security Considerations
 
-* Terraform state files are excluded using `.gitignore`
-* Terraform provider files are excluded from Git
-* No AWS credentials are stored in the repository
-* Sensitive environment files are excluded
-* GitHub Actions is used for automated validation
+* Terraform state files are excluded using `.gitignore`.
+* Terraform provider files are excluded from Git.
+* No AWS credentials are stored in the repository.
+* Sensitive environment files are excluded.
+* GitHub Actions is used for automated application and Terraform validation.
 
-## 13. Conclusion
+## 14. Conclusion
 
-This project demonstrates a basic end-to-end DevOps workflow using GitHub, Docker, Terraform, and GitHub Actions.
+This project demonstrates an end-to-end DevOps workflow using GitHub, Docker, Terraform, and GitHub Actions.
 
-The application is containerized, tested through CI, Terraform infrastructure is validated, and the application is available through an HTTPS URL.
+The application is containerized, validated through CI/CD, and the Terraform infrastructure configuration is validated successfully. The application is also available through an HTTPS URL using GitHub Pages.
+
